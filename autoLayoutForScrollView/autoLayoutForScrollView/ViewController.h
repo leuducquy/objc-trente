@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
+@property BOOL hiddenButton;
+@property (weak, nonatomic) IBOutlet UIButton *ButtonToVisible;
+@property (weak, nonatomic) IBOutlet UIScrollView *thisScrollView;
 
 @end
 

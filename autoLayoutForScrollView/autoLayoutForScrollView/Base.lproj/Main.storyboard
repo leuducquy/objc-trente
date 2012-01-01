@@ -14,11 +14,11 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nai-4z-aSw">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13K-lR-fmy">
                                         <rect key="frame" x="8" y="107" width="70" height="21"/>
@@ -74,7 +74,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="pVU-aR-0fb" kind="push" id="QgQ-t4-wK7"/>
+                                            <segue destination="pVU-aR-0fb" kind="modal" id="QgQ-t4-wK7"/>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0501.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="t36-Kw-KPN">
@@ -157,6 +157,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SDE-U3-Oen"/>
+                    <connections>
+                        <outlet property="ButtonToVisible" destination="UME-I2-sde" id="CQq-Zx-mvh"/>
+                        <outlet property="thisScrollView" destination="Nai-4z-aSw" id="OVf-R0-5jF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -171,11 +175,11 @@
                         <viewControllerLayoutGuide type="bottom" id="48H-GS-WnT"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="o9d-no-G7f">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sKx-Zx-tTO">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Quy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jU-2q-mFn">
                                         <rect key="frame" x="8" y="273" width="304" height="21"/>
@@ -183,12 +187,25 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4pP-M9-GHE">
+                                        <rect key="frame" x="8" y="366" width="304" height="30"/>
+                                        <state key="normal" title="BackToAutoLayout">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backtoHintt:" destination="pVU-aR-0fb" eventType="touchUpInside" id="Mgr-Sl-vSl"/>
+                                            <segue destination="vXZ-lx-hvc" kind="modal" identifier="backToLayout" id="4uK-sl-Gro"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="3jU-2q-mFn" secondAttribute="trailing" constant="8" id="5Tt-OT-pLF"/>
+                                    <constraint firstItem="4pP-M9-GHE" firstAttribute="top" secondItem="3jU-2q-mFn" secondAttribute="bottom" constant="72" id="CsX-hS-sEW"/>
+                                    <constraint firstItem="4pP-M9-GHE" firstAttribute="leading" secondItem="3jU-2q-mFn" secondAttribute="leading" id="JdU-9g-XFl"/>
                                     <constraint firstItem="3jU-2q-mFn" firstAttribute="top" secondItem="sKx-Zx-tTO" secondAttribute="top" constant="273" id="cw0-24-yQI"/>
                                     <constraint firstAttribute="centerX" secondItem="3jU-2q-mFn" secondAttribute="centerX" id="hIz-FH-mAn"/>
                                     <constraint firstAttribute="bottom" secondItem="3jU-2q-mFn" secondAttribute="bottom" constant="706" id="kRu-HI-NW6"/>
+                                    <constraint firstItem="4pP-M9-GHE" firstAttribute="trailing" secondItem="3jU-2q-mFn" secondAttribute="trailing" id="m6z-uC-6MT"/>
                                     <constraint firstItem="3jU-2q-mFn" firstAttribute="leading" secondItem="sKx-Zx-tTO" secondAttribute="leading" constant="8" id="mEL-IS-BCz"/>
                                 </constraints>
                             </scrollView>
@@ -205,7 +222,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vi3-mf-T2R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1092" y="290"/>
+            <point key="canvasLocation" x="1314" y="258"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6g9-8R-v9g">
@@ -241,4 +258,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="4uK-sl-Gro"/>
+    </inferredMetricsTieBreakers>
 </document>

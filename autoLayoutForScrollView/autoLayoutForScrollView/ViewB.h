@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewB : UIViewController
+- (IBAction)backtoHintt:(id)sender;
 
 @end
+

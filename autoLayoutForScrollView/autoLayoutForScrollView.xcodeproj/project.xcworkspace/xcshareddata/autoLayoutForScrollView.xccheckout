@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>69CC37B8-81DF-46A1-B400-BA4CA0999761</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>autoLayoutForScrollView</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>C9B180B20B9FFF51EC1A82BFC8AB2772B3B339C6</key>
 		<string>https://github.com/leuducquy/objc-trente.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>autoLayoutForScrollView/autoLayoutForScrollView.xcodeproj/project.xcworkspace</string>
+	<string>autoLayoutForScrollView/autoLayoutForScrollView.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>C9B180B20B9FFF51EC1A82BFC8AB2772B3B339C6</key>
