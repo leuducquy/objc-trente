@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"%@",ggg);
+    NSLog(@"leu duc quy");
     // Do any additional setup after loading the view.
 }
 
