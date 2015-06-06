@@ -15,6 +15,7 @@
 		04BDA0E51B22E1B100E81C44 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BDA0E31B22E1B100E81C44 /* LaunchScreen.xib */; };
 		04BDA0F11B22E1B100E81C44 /* singletonAndAppDeleteGateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BDA0F01B22E1B100E81C44 /* singletonAndAppDeleteGateTests.m */; };
 		04BDA1011B22EB0300E81C44 /* MySingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BDA1001B22EB0300E81C44 /* MySingleton.m */; };
+		04BDA1041B22EFEB00E81C44 /* AnnotherViewcontrollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BDA1031B22EFEB00E81C44 /* AnnotherViewcontrollerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		04BDA0F01B22E1B100E81C44 /* singletonAndAppDeleteGateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = singletonAndAppDeleteGateTests.m; sourceTree = "<group>"; };
 		04BDA0FF1B22EB0300E81C44 /* MySingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySingleton.h; sourceTree = "<group>"; };
 		04BDA1001B22EB0300E81C44 /* MySingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySingleton.m; sourceTree = "<group>"; };
+		04BDA1021B22EFEB00E81C44 /* AnnotherViewcontrollerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnotherViewcontrollerViewController.h; sourceTree = "<group>"; };
+		04BDA1031B22EFEB00E81C44 /* AnnotherViewcontrollerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnotherViewcontrollerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 				04BDA0D41B22E1B100E81C44 /* Supporting Files */,
 				04BDA0FF1B22EB0300E81C44 /* MySingleton.h */,
 				04BDA1001B22EB0300E81C44 /* MySingleton.m */,
+				04BDA1021B22EFEB00E81C44 /* AnnotherViewcontrollerViewController.h */,
+				04BDA1031B22EFEB00E81C44 /* AnnotherViewcontrollerViewController.m */,
 			);
 			path = singletonAndAppDeleteGate;
 			sourceTree = "<group>";
@@ -225,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04BDA0DD1B22E1B100E81C44 /* ViewController.m in Sources */,
+				04BDA1041B22EFEB00E81C44 /* AnnotherViewcontrollerViewController.m in Sources */,
 				04BDA1011B22EB0300E81C44 /* MySingleton.m in Sources */,
 				04BDA0DA1B22E1B100E81C44 /* AppDelegate.m in Sources */,
 				04BDA0D71B22E1B100E81C44 /* main.m in Sources */,
@@ -422,6 +428,7 @@
 				04BDA0F61B22E1B100E81C44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04BDA0F71B22E1B100E81C44 /* Build configuration list for PBXNativeTarget "singletonAndAppDeleteGateTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +437,7 @@
 				04BDA0F91B22E1B100E81C44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "AppDelegate.h"
-#import "MySingleton.h"
+
 @interface ViewController ()
 
 @end
@@ -33,5 +33,9 @@
 - (IBAction)loadDataFromsingleton:(id)sender {
     MySingleton *singleton = [MySingleton getInstance];
     [self.displaySingleton setText:[singleton getName]];
+}
+- (IBAction)save2singleton:(id)sender {
+    MySingleton *singleton = [MySingleton getInstance];
+    [singleton setName:@"Hello ban lan"];
 }
 @end

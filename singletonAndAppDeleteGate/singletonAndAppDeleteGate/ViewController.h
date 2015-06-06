@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "MySingleton.h"
 @interface ViewController : UIViewController
 - (IBAction)saveDataFromSingleton:(id)sender;
 - (IBAction)loadDataFromsingleton:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UILabel *displaySingleton;
+- (IBAction)save2singleton:(id)sender;
 
 @end
 
